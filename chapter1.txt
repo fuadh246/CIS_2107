@@ -1,0 +1,18 @@
+Chapter 1: Introduction to Unix
+
+
+STDIN - keyboard
+STDOUT - monitor
+
+
+Commands:
+
+% man - manual page
+% man man - gives the manual for man page
+% which - displays a path name of a command.
+% echo $SHELL - shows which shell you are using.
+% cat /etc/shells - To list all possible shells.
+%  % whereis tcsh - Display all locations of a command (or some other binary, man page, or a source file).
+% passwd - to change the password 
+% datę 0 shows date
+% 
