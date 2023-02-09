@@ -46,8 +46,8 @@ cmake_ninja_workdir = /Users/fuadhassan/Library/CloudStorage/OneDrive-TempleUniv
 
 build cmake_object_order_depends_target_ch_02_intro_c: phony || CMakeFiles/ch_02_intro_c.dir
 
-build CMakeFiles/ch_02_intro_c.dir/revenue.c.o: C_COMPILER__ch_02_intro_c_Debug /Users/fuadhassan/Library/CloudStorage/OneDrive-TempleUniversity/CIS_2107/ch_02_intro_c/revenue.c || cmake_object_order_depends_target_ch_02_intro_c
-  DEP_FILE = CMakeFiles/ch_02_intro_c.dir/revenue.c.o.d
+build CMakeFiles/ch_02_intro_c.dir/atm.c.o: C_COMPILER__ch_02_intro_c_Debug /Users/fuadhassan/Library/CloudStorage/OneDrive-TempleUniversity/CIS_2107/ch_02_intro_c/atm.c || cmake_object_order_depends_target_ch_02_intro_c
+  DEP_FILE = CMakeFiles/ch_02_intro_c.dir/atm.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu11
   OBJECT_DIR = CMakeFiles/ch_02_intro_c.dir
   OBJECT_FILE_DIR = CMakeFiles/ch_02_intro_c.dir
@@ -60,7 +60,7 @@ build CMakeFiles/ch_02_intro_c.dir/revenue.c.o: C_COMPILER__ch_02_intro_c_Debug 
 #############################################
 # Link the executable ch_02_intro_c
 
-build ch_02_intro_c: C_EXECUTABLE_LINKER__ch_02_intro_c_Debug CMakeFiles/ch_02_intro_c.dir/revenue.c.o
+build ch_02_intro_c: C_EXECUTABLE_LINKER__ch_02_intro_c_Debug CMakeFiles/ch_02_intro_c.dir/atm.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
   OBJECT_DIR = CMakeFiles/ch_02_intro_c.dir
   POST_BUILD = :

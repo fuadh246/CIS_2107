@@ -7,8 +7,10 @@
 int main () {
     printf("Start of the program....\n");
 
-    printf("Exiting the program....\n");
-    exit(0);
+    unsigned int passes ;
+    scanf("%u",&passes);
+    printf("%u\n",passes);
+
 
     printf("End of the program....\n");
 

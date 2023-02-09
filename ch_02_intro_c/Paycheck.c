@@ -42,6 +42,11 @@ int main(int argc, char** argv){
     puts(BLUE"Thank you for using \"TEMPLE HUMAN RESOURCES\" "RESET);
     return 0;
 }
+/*
+ * @function check_input:This function checks if the input "x" is a positive non-negative
+ * decimal number and returns 0 if it is and 1 otherwise.
+ * @param double x
+ * */
 
 int check_input(double x){
     double decimels,num;
