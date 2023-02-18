@@ -1,5 +1,8 @@
 //
-// Created by Fuad Hassan on 2/6/23.
+// name: Fuad Hassan
+// date: 02/12/2023
+// course: CIS 2107
+// homework number: 3
 //
 #include <stdio.h>
 #include <stdlib.h>
