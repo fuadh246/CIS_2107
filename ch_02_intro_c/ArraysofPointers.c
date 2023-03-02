@@ -1,8 +1,8 @@
 /* 
-Name: 
-Date:
+Name: Fuad Hassan
+Date: 03/02/2023
 Course: CSI2107 
-HW#: Lab 05: ““Arrays of Pointers to Functions” 
+HW#: Lab 05: “Arrays of Pointers to Functions”
 
 Objective: To design and implement array of function pointer. 
 
@@ -17,8 +17,7 @@ grades for individual students in a 2D matrix and determining the minimum, maxim
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define RAND_MIN 1
-#define RAND_MAX 100
+
 void printArray(int students, int exams, int grades[students][exams]);
 void minimum(int students, int exams, int grades[students][exams]);
 void  maximum(int students, int exams, int grades[students][exams]);
@@ -45,7 +44,7 @@ int main(void)
             scanf("%d",&grades[student][exam]);
         }
     }
-    void (*processGrades[4])(int,int, int[][exams])={printArray,minimum,maximum,average};
+    void (*processGrades[4])(int,int, int[students][exams])={printArray,minimum,maximum,average};
     size_t choice=getChoice();
     while (choice!=4){
         (*processGrades[choice])(students,exams,grades);
@@ -61,8 +60,8 @@ int getChoice(){
     puts("\t2 Find the maximum grade");
     puts("\t3 Print the average on all the tests for each student");
     puts("\t4 End Program\n");
-    printf("Your Choice: ");
-    scanf("%d", &choice);
+        printf("Your Choice: ");
+        scanf("%d", &choice);
     return choice;
 }
 
