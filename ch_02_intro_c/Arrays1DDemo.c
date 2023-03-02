@@ -2,7 +2,7 @@
 // name: Fuad Hassan
 // date: 02/12/2023
 // course: CIS 2107
-// homework number: 3
+// homework number: 4
 //
 
 #include <stdio.h>
@@ -37,7 +37,7 @@ int main(int argc, const char * argv[]){
     short lowSelectedRange=0;
     short highSelectedRange=9;
     int x = findWithRange( array,SIZE,  lowSelectedRange, highSelectedRange);
-    printf(BLUE"MAX from index "RED"%u"RESET" to "RED"%u"RESET" is: "RED"%d\n"RESET,lowSelectedRange,highSelectedRange,x);
+    printf(BLUE"MAX from index "RED"%u"BLUE" to "RED"%u"BLUE" is: "RED"%d\n"RESET,lowSelectedRange,highSelectedRange,x);
 
     puts(BLUE"Reversed Array"RESET);
     reverseArray(array,SIZE);
@@ -66,7 +66,7 @@ void printArray(int array[], int size){
     }
 }
 /*
- *
+ * fills the array with random numbers
  * */
 void fillArray(int array[], int size){
     for(unsigned int i=0;i<size;i++){

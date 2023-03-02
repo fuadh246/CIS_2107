@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include<math.h>
+#define RED "\e[0;31m"
 #define BLUE "\e[0;34m"
 #define RESET "\x1b[0m"
 int check_input(double x);
