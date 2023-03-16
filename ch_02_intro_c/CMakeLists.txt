@@ -3,4 +3,4 @@ project(ch_02_intro_c C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(ch_02_intro_c Pointer.c)
+add_executable(ch_02_intro_c Race.c)

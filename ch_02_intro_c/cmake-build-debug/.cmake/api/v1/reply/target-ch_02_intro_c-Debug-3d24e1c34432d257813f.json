@@ -94,7 +94,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Pointer.c",
+			"path" : "Race.c",
 			"sourceGroupIndex" : 0
 		}
 	],
