@@ -23,8 +23,6 @@ void minimum(int students, int exams, int grades[students][exams]);
 void  maximum(int students, int exams, int grades[students][exams]);
 void average(int students, int exams, int grades[students][exams]);
 
-int minValue(int students, int exams, int grades[students][exams]);
-int maxValue(int students, int exams, int grades[students][exams]);
 int getChoice();
 int main(void)
 {
@@ -53,15 +51,20 @@ int main(void)
     return 0;
 }
 int getChoice(){
-    size_t choice;
+    int choice=-1;
     puts("Enter a choice:");
     puts("\t0 Print the array of grades");
     puts("\t1 Find the minimum grade");
     puts("\t2 Find the maximum grade");
     puts("\t3 Print the average on all the tests for each student");
     puts("\t4 End Program\n");
+    while (choice > 4 || choice < 0) {
         printf("Your Choice: ");
         scanf("%d", &choice);
+        if (choice > 4 || choice < 0) {
+            printf("Invalid choice. Please try again.\n");
+        }
+    }
     return choice;
 }
 
@@ -77,32 +80,27 @@ void  printArray(int students, int exams, int grades[students][exams]){
 }
 void  minimum(int students, int exams, int grades[students][exams]){
     for (int student = 0; student < students; ++student) {
-        printf("\tStudent [%d]: %3d\n", student, minValue(student,exams,grades));
+        int min = grades[student][0];
+        for (int exam = 0; exam < exams; exam++) {
+            if(min>grades[student][exam]){
+                min=grades[student][exam];}
+        }
+        printf("\tStudent [%d]: %3d\n", student, min);
+
     }
     puts("");
-}
-int minValue(int students, int exams, int grades[students][exams]){
-    int min=grades[0][0];
-    for (int exam = 0; exam < exams; exam++) {
-        if(min>grades[students][exam])
-            min=grades[students][exam];
-    }
-    return min;
 }
 
 void  maximum(int students, int exams, int grades[students][exams]){
     for (int student = 0; student < students; ++student) {
-        printf("\tStudent [%d]: %3d\n", student, maxValue(student,exams,grades));
+        int max=grades[0][0];
+        for (int exam = 0; exam < exams; exam++) {
+            if(max<grades[student][exam])
+                max=grades[student][exam];
+        }
+        printf("\tStudent [%d]: %3d\n", student, max);
     }
     puts("");
-}
-int maxValue(int students, int exams, int grades[students][exams]){
-    int max=grades[0][0];
-    for (int exam = 0; exam < exams; exam++) {
-        if(max<grades[students][exam])
-            max=grades[students][exam];
-    }
-    return max;
 }
 void  average(int students, int exams, int grades[students][exams]){
     int sum=0;
