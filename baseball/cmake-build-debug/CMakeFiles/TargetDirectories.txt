@@ -1,0 +1,3 @@
+/Users/fuadhassan/Library/CloudStorage/OneDrive-TempleUniversity/CIS_2107/baseball/cmake-build-debug/CMakeFiles/baseball.dir
+/Users/fuadhassan/Library/CloudStorage/OneDrive-TempleUniversity/CIS_2107/baseball/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/fuadhassan/Library/CloudStorage/OneDrive-TempleUniversity/CIS_2107/baseball/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,4 +1,6 @@
 //CIS2017 Lab7: Race
+//Name: Fuad Hassan
+//Date: 03/16/2023
 //The purpose of this program is to simulate and display the race between the tortoise and the hare using a random number
 //generator and preset move types. The animal positions are accessed and modified using pointers, and the display is
 //controlled using the sleep() function. Sometimes it takes a while due to slippage.
@@ -28,7 +30,6 @@ int main(){
     puts("\tON YOUR MARK, GET SET");
     puts("\tBANG               !!!!");	//the spacing is modeled after the sample
     puts("\tAND THEY'RE OFF    !!!!");	//the spacing is modeled after the sample
-
     while(hPos != 70 && tPos!=70){
         sleep(1);						//slows down the race
         hareMove(&hPos);
@@ -44,6 +45,7 @@ int main(){
         puts("Hare wins. Yuch.");
     }
 
+    return 0;
 }
 
 //Finds minimum of hare or tortoise position to decide which position to print first

@@ -1,0 +1,3 @@
+/Users/fuadhassan/Library/CloudStorage/OneDrive-TempleUniversity/CIS_2107/Lab07_Mini_GDB/cmake-build-debug/CMakeFiles/Lab07_Mini_GDB.dir
+/Users/fuadhassan/Library/CloudStorage/OneDrive-TempleUniversity/CIS_2107/Lab07_Mini_GDB/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/fuadhassan/Library/CloudStorage/OneDrive-TempleUniversity/CIS_2107/Lab07_Mini_GDB/cmake-build-debug/CMakeFiles/rebuild_cache.dir
