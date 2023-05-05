@@ -1,0 +1,24 @@
+
+// Fuad Hassan fuad.hassan0001@temple.edu
+public class Main {
+    public static void main(String[] args) {
+        palindrome(1000);
+    }
+
+    public static boolean palindrome(int num) {
+        int num_main = num;
+        int reversed = 0, remainder;
+
+        while (num != 0) {
+            remainder = num % 10;
+            reversed = reversed * 10 + remainder;
+            num /= 10;
+        }
+        if (num_main == reversed) {
+            return true;
+        }
+        return false;
+    }
+}
+
+Fuad Hassan
